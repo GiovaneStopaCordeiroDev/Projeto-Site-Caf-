@@ -115,15 +115,15 @@ nav {
     }
 
     .img-header {
-    width:  70px;
-    height: 70px;
+    width:  100px;
+    height: 100px;
 }
 }
 
 /* Main */
 .main {
     min-height: 85vh;
-    background: url(imagens/home-img.png) center no-repeat;
+    background: url(imagens/home-img.png) center center no-repeat;
     background-size: cover;
     display: flex;
     align-items: start;
@@ -159,27 +159,31 @@ nav {
 @media (max-width: 765px) {
      /* Main*/
 
-    .title-main {
-        font-size: 30px;
-        margin-right: 20%;
-        margin-left: 3%;
-    }
-
     .button-main {
-        padding: 10px 24px;
-        font-size: 10px;
+        padding: 14px 28px;
+        font-size: 15px;
         margin-left: 4%;
     }
 
-    .main {
-        min-height: 35vh;
-        gap: 10px;
+     .main {
+        background-position: center top; /* mantém o centro superior visível */
+        background-size: cover;
+        min-height: 70vh; /* diminui a altura para caber na tela */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* o conteúdo fica na parte inferior da imagem */
+        padding-bottom: 5%; /* dá um espaçamento para o botão */
+    }
 
+    .title-main {
+        font-size: 2.5rem; /* reduz o tamanho do título no mobile */
+        margin-left: 5%;
     }
 }
 /* Sobre */
 .sobre {
     margin: 7%;
+    min-height: 100vh;
 }
 
 .conteudo-sobre {
@@ -211,11 +215,11 @@ nav {
 
 @media (max-width: 765px) {
     .h1-sobre {
-        font-size: 2.3rem;
+        font-size: 3rem;
     }
 
     .p-sobre {
-    font-size: 12px;
+    font-size: 18px;
     }
 
 }
@@ -226,6 +230,7 @@ nav {
     display: flex;
     flex-direction: column; 
     padding-top: 5%;
+    min-height: 90vh;
 }
 
 .premios-conteudo {
@@ -246,7 +251,7 @@ nav {
 .divisao{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     margin: 10% 4%;
     
 }
@@ -261,7 +266,6 @@ nav {
 .lista-premios {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .card-title {
@@ -306,7 +310,7 @@ nav {
     }
 
     .divisao {
-        gap: 20px;
+        gap: 40px;
     }
 }
 
@@ -319,6 +323,7 @@ nav {
     justify-content: start;
     margin: 7%;
     margin-bottom: -1%;
+    min-height: 70vh;
 }
 
 .catalogo-conteudo {
@@ -332,6 +337,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-height: 70vh;
 }
 
 .title-catalogo {
@@ -353,7 +359,7 @@ nav {
     justify-content: start;
     border: none;
     border-radius: 15px;
-    min-height: 50vh;
+    min-height: 75vh;
     max-width: 70vh;
     gap: 25px;
 
@@ -369,6 +375,8 @@ nav {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0px 10px;
+    min-height: 40vh;
+    min-width: 25vh;
 }
 
 .title-divisao {
@@ -403,10 +411,10 @@ nav {
 
 @media (max-width: 765px) {
     .title-divisao {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
     .subtitle-catalogo {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -428,11 +436,11 @@ nav {
     }
 
     .li-classicas, .lista-premium {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .title-catalogo {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
