@@ -1,44 +1,19 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, NavLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.NavLinks = document.querySelectorAll(NavLinks);
-        this.activeClass = "active";
+const navList = document.querySelector(".nav-list");
+const mobileMenu = document.querySelector(".mobile-menu");
+const navLinks = document.querySelectorAll(".nav-links");
 
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.NavLinks.forEach(link=> {
-            link.style.animation
-            ?(link.style.animation =" ")
-            :(link.style.animation =`navLinkFade 0.5s ease forwards 0.3s`)
-        });
-    }
-    handleClick() {
-        console.log(this)
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks()
-
-        }
-        addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-        if (this.mobileMenu){
-            this.addClickEvent();
-        }
-        return this
-    }
-
+function showMobileMenu() {
+    navList.classList.toggle("active");
+    mobileMenu.classList.toggle("active")
+    animateLinks();
 }
 
- const mobileNavbar = new MobileNavbar(
-        ".mobile-menu",
-        ".nav-list",
-        ".nav-list li"
-    );
-    mobileNavbar.init()
+function animateLinks() {
+    navLinks.forEach((link, index) => {
+        link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease ${index / 7 + 0.3}s forwards`);
+    });
+}
 
+mobileMenu.addEventListener("click", showMobileMenu);
