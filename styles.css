@@ -68,9 +68,17 @@ nav {
   body {
     overflow-x: hidden;
   }
+
+  header {
+        position: fixed; /* Mude para FIXED */
+        top: 0;
+        width: 100%; /* Garanta a largura total, essencial para fixed */
+        height: 15vh; /* Mantenha a altura */
+    }
+
   .nav-list {
     position: fixed;
-    top: 15vh; /* Ajustado para começar abaixo do header */
+    top: 11vh; /* Ajustado para começar abaixo do header */
     right: 0;
     width: 70vw;
     height: 85vh; /* Ajustado para preencher o resto da tela */
