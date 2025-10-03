@@ -16,8 +16,6 @@ body {
 header {
     background-color: #051F20;
     height: 15vh;
-    position: sticky;
-    z-index: 1000;
 }
 
 
@@ -43,6 +41,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+
 }
 
 .nav-list li {
@@ -71,14 +70,13 @@ nav {
     position: fixed;
     top: 15vh; /* Ajustado para começar abaixo do header */
     right: 0;
-    width: 50%;
-    max-width: 300px;
+    width: 70vw;
     height: 85vh; /* Ajustado para preencher o resto da tela */
     background: #051F20;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
+    transform: translateX(calc(100% + 5px)); 
     transition: transform 0.3s ease-in;
     z-index: 999;
   }
