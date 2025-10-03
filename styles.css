@@ -70,6 +70,7 @@ nav {
 
 @media (max-width: 999px) {
   body {
+    max-width: 100vh;
     overflow-x: hidden;
   }
   .nav-list {
@@ -120,6 +121,11 @@ nav {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.header-logo {
+    width: 120px;
+    height: 120px;
 }
 
 /* Main */
