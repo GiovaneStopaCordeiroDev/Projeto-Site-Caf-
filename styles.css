@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    height: 15vh;
     top: 0;
     z-index: 1000; /* garante que fique por cima do conteúdo */
 }
@@ -65,9 +66,9 @@ nav {
 @media (max-width: 999px) {
     .nav-list {
         position: absolute;
-        top: 15vh;
+        top: 100%;
         right: 0;
-        width: 30vh;
+        width: 25vh;
         height: 78vh;
         background-color: #051F20;
         flex-direction: column;
@@ -77,6 +78,7 @@ nav {
         transition: transform 0.3s ease-in;
         border: none;
         border-radius: 5px;
+        font-size: 1rem;
     }
     
     .nav-list li {
