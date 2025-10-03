@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-    margin-right: 15%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -62,13 +62,13 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 999px) {
     .nav-list {
         position: absolute;
-        top: 13vh;
+        top: 15vh;
         right: 0;
-        width: 20vh;
-        height: 30vh;
+        width: 30vh;
+        height: 78vh;
         background-color: #051F20;
         flex-direction: column;
         align-items: center;
@@ -155,7 +155,7 @@ nav {
 .button-main:hover {
     background: #0b4042;
 }
-@media (max-width: 765px) {
+@media (max-width: 999px) {
      /* Main*/
 
     .button-main {
@@ -211,7 +211,7 @@ nav {
     color: #804e34;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 999px) {
     .h1-sobre {
         font-size: 3rem;
     }
@@ -288,7 +288,7 @@ nav {
     text-align: center;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 999px) {
     .premios-titulo {
         font-size: 2rem;
     }
@@ -401,9 +401,9 @@ nav {
     padding: 0px 10px;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 999px) {
     .title-divisao {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .subtitle-catalogo {
         font-size: 1.5rem;
@@ -428,7 +428,7 @@ nav {
     }
 
     .li-classicas, .lista-premium {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .title-catalogo {
