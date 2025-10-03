@@ -80,7 +80,6 @@ nav {
         border-radius: 5px;
         font-size: 1rem;
         z-index: 999;
-        overflow-x: hidden;
     }
     
     .nav-list li {
@@ -95,7 +94,6 @@ nav {
 
     .nav-list.active {
         transform: translateX(0);
-        overflow-x:visible;
     }
 
     @keyframes navLinkFade {
