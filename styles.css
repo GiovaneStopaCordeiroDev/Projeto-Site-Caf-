@@ -8,7 +8,8 @@
 
 body {
     background-color: #FFF1E0;  
-    overflow-x: hidden
+    overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -330,7 +331,6 @@ nav {
     justify-content: start;
     margin: 7%;
     margin-bottom: -1%;
-    min-height: 70vh;
 }
 
 .catalogo-conteudo {
@@ -345,6 +345,7 @@ nav {
     flex-direction: column;
     gap: 10px;
     min-height: 70vh;
+    max-width: 80vh;
 }
 
 .title-catalogo {
