@@ -41,7 +41,6 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
-  margin-right: 8%;
 }
 
 .nav-list li {
@@ -127,6 +126,8 @@ nav {
     background: url(imagens/home-img.png) no-repeat;
     background-size: cover;
     display: flex;
+    width: 100%;
+    max-width: 100%;
     align-items: start;
     flex-direction: column;
     justify-content: center;
@@ -184,6 +185,10 @@ nav {
 /* Sobre */
 .sobre {
     margin: 7%;
+    width: 86%;
+    max-width: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .conteudo-sobre {
@@ -231,6 +236,7 @@ nav {
     flex-direction: column; 
     padding-top: 5%;
     min-height: 90vh;
+    width: 100%;
 }
 
 .premios-conteudo {
@@ -295,13 +301,12 @@ nav {
         font-size: 2rem;
     }
     
-    /* ================================================= */
-    /* ALTERAÇÃO PRINCIPAL PARA CORRIGIR A ROLAGEM */
+    
     .premios-conteudo {
-        flex-direction: column; /* Faz os dois blocos de prêmios ficarem um em cima do outro */
-        align-items: center; /* Centraliza os blocos */
+        flex-direction: column;
+        align-items: center;
     }
-    /* ================================================= */
+    
 
     .subtitulo-premios {
         font-size: 1.3rem;
@@ -319,7 +324,7 @@ nav {
 
     .divisao {
         gap: 40px;
-        margin: 5% 4%; /* Reduz a margem vertical para telas menores */
+        margin: 5% 4%; 
     }
 }
 
@@ -331,6 +336,7 @@ nav {
     align-items: center;
     justify-content: start;
     margin: 7%;
+    width: 90%;
     margin-bottom: -1%;
 }
 
