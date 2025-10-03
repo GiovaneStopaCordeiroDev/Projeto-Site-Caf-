@@ -24,6 +24,9 @@ Menu de navegação (Início, Sobre, Catálogo)
 🛠 Tecnologias utilizadas
 
 HTML
+
 CSS
+
 JavaScript
+
 Netlify (Hospedagem)
