@@ -16,6 +16,8 @@ body {
 header {
     background-color: #051F20;
     height: 15vh;
+    position: sticky;
+    z-index: 1000;
 }
 
 
@@ -69,7 +71,8 @@ nav {
     position: fixed;
     top: 15vh; /* Ajustado para começar abaixo do header */
     right: 0;
-    width: 70vw;
+    width: 50%;
+    max-width: 300px;
     height: 85vh; /* Ajustado para preencher o resto da tela */
     background: #051F20;
     flex-direction: column;
