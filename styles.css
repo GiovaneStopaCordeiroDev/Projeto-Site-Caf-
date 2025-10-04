@@ -65,9 +65,6 @@ nav {
 }
 
 @media (max-width: 765px) {
-  body {
-    overflow-x: hidden;
-  }
 
   header {
         position: fixed; /* Mude para FIXED */
