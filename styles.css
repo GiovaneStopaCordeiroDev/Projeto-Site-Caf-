@@ -75,7 +75,7 @@ nav {
     }
 
   .nav-list {
-    position: fixed;
+    position: absolute;
     top: 11vh; /* Ajustado para começar abaixo do header */
     right: 0;
     width: 70vw;
