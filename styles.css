@@ -70,10 +70,11 @@ nav {
   }
 
   header {
-        position: fixed; /* Mude para FIXED */
+        position: sticky; /* Mude para FIXED */
         top: 0;
         width: 100%; /* Garanta a largura total, essencial para fixed */
         height: 15vh; /* Mantenha a altura */
+        z-index: 1000;
     }
 
   .nav-list {
