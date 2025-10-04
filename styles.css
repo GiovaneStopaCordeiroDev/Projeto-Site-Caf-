@@ -70,7 +70,7 @@ nav {
   }
 
   header {
-        position: sticky; /* Mude para FIXED */
+        position: fixed; /* Mude para FIXED */
         top: 0;
         width: 100%; /* Garanta a largura total, essencial para fixed */
         height: 15vh; /* Mantenha a altura */
