@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -323,6 +327,7 @@ main {
     .nav-list  {
        position: fixed;
        top: 15vh;
+       bottom: 10vh;
        right: 0;
        width: 50%;
        max-width: 250px;
