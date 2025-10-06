@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FFF1E0;
+}
+
+.imagem-header {
+    width: 105px;
+    height: 105px;
+}
+
+header {
+    position: sticky;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #051F20;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #845034;
+}
+
+/* ------------------------------------ CONTEUDO MAIN --------------------------------------------------*/
+main {
+    background-color: #3b39d1;
+    max-height: 85vh;
+    display: flex;
+    align-items: center;
+    background-image: url(imagens/home-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin: 17%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+}
+
+.title-container {
+    font-size: 4rem;
+    color: #845034;
+    font-weight: bold;
+}
+
+.button-container {
+    background-color: #1D3F35;
+    min-height: 50px;
+    min-width: 140px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.button-container:hover {
+    background-color: #20463a;
+}
+
+/* ------------------------------------ CONTEUDO SOBRE --------------------------------------------------*/
+.sobre {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title-sobre {
+    font-size: 4rem;
+    color: #845034;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-sobre {
+    font-size: 1.4rem;
+    color: #051F20;
+    font-weight: bold;
+}
+
+/* ------------------------------------ CONTEUDO PRÊMIOS --------------------------------------------------*/
+.premios-concursos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #051F20;
+    color: #ffffff;
+    max-height: auto;
+}
+
+.title-section-premios {
+    margin-top: 5%;
+    font-size: 4rem;
+    color: #845034;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo-premios {
+    padding: 5%;
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div-concursos,
+.div-premios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-concursos,
+.title-premios {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-premios {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.premios {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5B3A29;
+}
+
+.titles-card {
+    color: #386e33;
+}
+
+/* ------------------------------------ CONTEUDO CATÁLOGO --------------------------------------------------*/
+.title-catalogo,
+.subtitle-catalogo {
+    text-align: center;
+}
+
+.title-catalogo {
+    margin-top: 3%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #845034;
+}
+
+.subtitle-catalogo {
+    margin-top: 2%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #845034;
+}
+
+.catalogo {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.divisao-catalogo,
+.divisao-catalogo-premium {
+    width: auto;
+    max-width: 400px;
+    max-height: 60vh;
+    background-color: #E2D7CA;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.divisao-catalogo-premium {
+    background-color: #051F20;
+}
+
+.title-divisao-classica,
+.title-divisao-premium {
+    margin-top: 3%;
+    text-align: center;
+    color: #5B3A29;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.list-catalogo-classica,
+.list-catalogo-premium {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.list-catalogo-classica {
+    color: #1D3F35;
+}
+
+.list-catalogo-premium {
+    color: #FFF;
+}
+
+/* ------------------------------------ FOOTER --------------------------------------------------*/
+.redes-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+#footer-content {
+    background-color: #051F20;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+    gap: 2rem;
+    color: white;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.footer-list li {
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #845034;
+}
+
+#footer-contatos h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+    line-height: 1.1;
+}
+
+#footer-contatos {
+    margin-top: -10px
+}
+
+/* ------------------------------------ RESPONSIVIDADE --------------------------------------------------*/
+@media screen and (max-width: 795px) {
+
+    /*HEADER*/
+    .nav-list a {
+        font-size: 1rem;
+    }
+
+    .imagem-header {
+        width: 80px;
+        height: 80px;
+        margin-left: 3%;
+    }
+
+    /*MAIN*/
+
+    .title-container {
+        font-size: 3rem;
+    }
+
+    /*SOBRE*/
+
+    .title-sobre {
+        font-size: 3rem;
+    }
+
+    .content-sobre {
+        font-size: 1rem;
+    }
+
+    /*PREMIOS*/
+
+    .title-section-premios {
+        font-size: 2rem;
+    }
+
+    .title-premios {
+        font-size: 1.2rem;
+    }
+
+    .conteudo-premios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .premios {
+        font-size: 1rem;
+    }
+
+    .premios-concursos {
+        margin-top: 10%;
+        font-size: 1rem;
+        min-height: 100vh;
+    }
+
+    /*CATALOGO*/
+    .title-catalogo {
+        font-size: 3rem;
+    }
+
+    .subtitle-catalogo {
+        font-size: 1.5rem;
+    }
+
+    .catalogo {
+        margin-top: 5%;
+        flex-direction: column;
+        padding: 10%;
+        gap: 20px;
+
+    }
+
+    .title-divisao-classica,
+    .title-divisao-premium {
+        font-size: 1.3rem;
+    }
+
+    .list-catalogo-classica,
+    .list-catalogo-premium {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .divisao-catalogo,
+    .divisao-catalogo-premium {
+        min-height: 30vh;
+        padding-left: 5%;
+        padding-right: 5%;
+    }   
+
+    /*FOOTER*/
+
+    #footer-content {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        text-align: center;
+        gap: 1.3rem;
+    }
+
+    .footer-link:hover {
+        color: #845034;
+    }
+
+    #footer-contatos {
+        margin-top: 20px;
+    }
+}
