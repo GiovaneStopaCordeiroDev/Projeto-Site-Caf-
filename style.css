@@ -326,7 +326,7 @@ main {
     /*HEADER*/
     .nav-list  {
        position: fixed;
-       top: 15vh;
+       top: 14vh;
        right: 0;
        width: 50%;
        max-width: 250px;
